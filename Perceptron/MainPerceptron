@@ -5,7 +5,7 @@ clc;
 close all;
 % ---------------------------------------
 
-load DatosLS50 % Loading Data for Perceptron
+load DatosLS50 % Loading Data for Perceptron. It is loaded in 'Data'
 LR = 0.1;      % Learning Rate
 
 % Perceptron Functionality
