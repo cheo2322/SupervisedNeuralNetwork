@@ -12,6 +12,6 @@
 
 function [Input,Output,Target] = ValoresIOT(Data,EvolW,i)
 Input = [Data(i,1:end-1) -1];    % All i Data values, except the last column (target) and add a -1
-Output = (Input*EvolW(:,end))>0; % Multiplicate the inputs times the weights vector (the last column of the evolution weights matrix)
+Output = (Input*EvolW(:,end))>0; % Multiplicate the inputs times the weights vector (the last column of the evolution weights matrix) and apply a pseduo-sign function (just returning 0 or 1)
 Target = Data(i,end);            % The last column of the i patterns
 end
