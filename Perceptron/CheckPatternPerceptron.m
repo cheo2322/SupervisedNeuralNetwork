@@ -3,7 +3,8 @@
 % Tutor: Francisco Ortega, PhD
 % Check if ou perceptron classify all patterns correctly
 % Inputs: Data, the input data (AND, OR tables)
-% Outputs: 1 o 0, 1 if all outputs are equal to targets, 0 in the other cases
+%         EvolW, the evolution weight matrix
+% Outputs: check, 1 o 0, 1 if all outputs are equal to targets, 0 in the other cases
 % ------------------------------------------------------------------------------
 
 function check = CheckPatternPerceptron(Data,EvolW)
