@@ -11,9 +11,10 @@ LR = 0.1;      % Learning Rate
 % Perceptron Functionality
 % -----------------------------------
 W = PerceptronWeigthsGenerator(Data);                       % Generate the initial Random Weights
+EvolW = W;                                                  % Random weights are added to the evolution weights matrix; at the start
 Epoc = 1;                                                   % Starting epochs
 E = Epoc;                                                   % Add the correspondent epoch to a vector for showing in the graph
-EvolW = W;                                                  % Random weights are added to the evolution weights matrix; at the start
+
 while ~CheckPattern(Data,EvolW(:,end)) && Epoc<100          % while we do not have a correct classification, continue editing weights
     for i=1:size(Data,1)                                    % loop for each inputs set
         [Input,Output,Target] = ValoresIOT(Data,EvolW,i);   % calculate the necessary values
