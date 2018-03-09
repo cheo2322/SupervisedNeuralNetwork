@@ -1,4 +1,4 @@
-----% ------------------------------------------------------------------------
+% -----------------------------------------------------------------------------
 % Author: Sergio Hidalgo
 % Tutor: Francisco Ortega, PhD
 % Check if ou perceptron classify all patterns correctly
