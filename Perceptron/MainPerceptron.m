@@ -1,3 +1,9 @@
+% -----------------------------------------------------------------------------
+% Author: Sergio Hidalgo
+% Tutor: Francisco Ortega, PhD
+% Run the perceptron and plot the results
+% ------------------------------------------------------------------------------
+
 % Clear all variables, the command windows and close all windows
 % ----------------------------------------
 clear;
