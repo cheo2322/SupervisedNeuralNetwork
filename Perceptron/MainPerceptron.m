@@ -5,7 +5,7 @@ clc;
 close all;
 % ---------------------------------------
 
-load DatosAND1 % Loading Data for Perceptron. It is loaded in 'Data'. You must have 'DatosAND1' in the same folder that this program, or re-structure this calling
+load DatosAND  % Loading Data for Perceptron. It is loaded in 'Data'. You must have 'DatosAND' in the same folder that this program, or re-structure this calling
 LR = 0.1;      % Learning Rate
 
 % Perceptron Functionality
