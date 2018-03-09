@@ -11,6 +11,6 @@
 % --------------------------------------------------------------------------------------
 
 function EvolW = UpdateNet(EvolW,LR,Output,Target,Input)
-New = EvolW(:,end)+(LR*(Target-Output)*Input)'; % 
-EvolW = [EvolW New];
+New = EvolW(:,end)+(LR*(Target-Output)*Input)'; % Multiplicate the error times the learning rate times the inputs and add to the last weihgts
+EvolW = [EvolW New];                            % Added the calculated weights to the evolution weights matrix as a nwe column
 end
